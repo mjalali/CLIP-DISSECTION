@@ -37,6 +37,7 @@ This function returns two components of diversity, decoupled as follows:
 - Image Generator Diversity: Measures the variability originating from the image sources.
 
 ## Clustering with SCE
+![Dissecting CLIP](images/clip_clustering.png)
 The script enables clustering of images after applying SCE CLIP embedding correction based on prompts. Use the following function:
 ```python
 # Cluster Results
@@ -45,6 +46,7 @@ SCE.rff_schur_clustering_modes_of_dataset(prompts, image_dataset)
 Note that top images, number of modes and sensitivity (_sigma_ parameter) are adjustable. The results are stored in location specified in _save_visuals_path_.
 
 ## Removing directions from CLIP embedding
+![Dissecting CLIP](images/clip_diffusion.png)
 SCE framework allows to remove features and directions from the CLIP embedding using the following functions:
 ```python
 # Initialise images/texts to correct
