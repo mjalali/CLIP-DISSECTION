@@ -1,6 +1,7 @@
 # CLIP-DISSECTION
 A GitHub repository accompanying a "Dissecting CLIP: Decomposition with a Schur Complement-based Approach" paper
-![Alt text](images/intro_image.png "Optional title")
+
+![Dissecting CLIP](images/intro_image.png)
 
 ## Initializing SCE
 To compute SCE score presented in the paper, initialize SCE with the following:
