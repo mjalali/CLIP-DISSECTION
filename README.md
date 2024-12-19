@@ -28,6 +28,6 @@ In this snippet, parameter _sigma_ controls the bandwidth of the Gaussian Kernel
 To compute the SCE score of the paired text-image dataset, use the following function:
 ```python
 # Get SCE Scores
-img_generator_diversity, text_prompt_diversity = SCE.rff_schur_vendi(prompts, image_dataset)
+img_generator_diversity, text_prompt_diversity = SCE.sce_score(prompts, image_dataset)
 ```
 The function returns decoupled diversity that comes from the text source and image source. 
