@@ -763,7 +763,7 @@ def schur_vendi_from_eigs(eigenvalues, args):
     
     return vendi.item()
 
-def rff_schur_vendi_from_feats(text_test_feats, image_test_feats, args, K=None):
+def rff_sce_from_feats(text_test_feats, image_test_feats, args, K=None):
     
     if K is None:
         complement, complement_difference, _ = rff_schur_complement(text_test_feats, image_test_feats, args)

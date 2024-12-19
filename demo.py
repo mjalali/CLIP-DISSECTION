@@ -30,7 +30,7 @@ if __name__ == '__main__':
     SCE.rff_schur_clustering_modes_of_dataset(prompts, image_dataset)
     
     # Get SCE Scores
-    img_generator_diversity, text_prompt_diversity = SCE.rff_schur_vendi(prompts, image_dataset)
+    img_generator_diversity, text_prompt_diversity = SCE.sce_score(prompts, image_dataset)
 
     
     

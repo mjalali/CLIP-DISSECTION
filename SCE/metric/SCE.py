@@ -255,7 +255,7 @@ class SCE_Evaluator():
         visualize_mode_by_eigenvectors_rff(test_feats, test_dataset, test_idxs, args)
         
 
-    def rff_schur_vendi(self,
+    def sce_score(self,
                         prompts,
                         test_dataset: torch.utils.data.Dataset,
                         paired_test_feats = None,
@@ -302,9 +302,9 @@ class SCE_Evaluator():
                                                                         num_samples=args.num_samples, 
                                                                         batchsize=args.batchsize)
         # print(text_test_feats.shape, image_test_feats.shape)
-        vendi_complement, vendi_complement_difference = rff_schur_vendi_from_feats(text_test_feats, image_test_feats, args, K=None)
+        sce_complement, sce_complement_difference = rff_sce_from_feats(text_test_feats, image_test_feats, args, K=None)
         
-        return vendi_complement, vendi_complement_difference
+        return sce_complement, sce_complement_difference
     
     
     def corrected_embedding_t2i(self,
