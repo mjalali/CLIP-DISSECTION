@@ -64,7 +64,7 @@ corrected_t2i_embedding = SCE.corrected_embedding_t2i(prompts_to_correct, image_
 corrected_i2t_embedding = SCE.corrected_embedding_i2t(prompts_to_correct, image_dataset_to_correct, prompts, image_dataset)
 ```
 This repository provides correction for I2T, T2I and T2T tasks with CLIP embeddings. We note that SCE framework can be extended to non-CLIP family of embeddings to perform embedding correction under T2T and I2I tasks, i.e. when there is no mixture of data domains. 
-We also note that SCE framework requires preliminary data to construct optimal correction matrix $\Gamma^*$. It is automatically saved, so you only need to compute it once and then could be reused. 
+We also note that SCE framework requires preliminary data to construct optimal correction matrix $\Gamma^*$. It is automatically saved, so you only need to compute it once and then it could be reused. 
 
 ## Datasets used
 We provide access to datasets as follows:
